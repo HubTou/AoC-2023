@@ -47,3 +47,5 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments
 Half of the top 100 leaders have a GitHub account, and one third of them have published their AoC 2023 code.
 
 Among them, I noticed [Jonathan Paulson (#5) Python solutions](https://github.com/jonathanpaulson/AdventOfCode/tree/master/2023), and [mrphlip (#27) commented Python solutions](https://github.com/mrphlip/aoc/tree/master/2023). 
+
+There are some other interesting resources on GitHub, such as a [collection of awesome resources related to the yearly Advent of Code challenge](https://github.com/Bogdanp/awesome-advent-of-code), or on the Web, such as an article about [Solving Your Puzzles With Python](https://realpython.com/python-advent-of-code/).
