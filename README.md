@@ -1,7 +1,7 @@
 # [Advent of Code 2023](https://adventofcode.com/2023)
 This is a repository of personal notes and solutions to this coding tournament / challenge.
 
-For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 15 soon).
+For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 16 soon).
 
 ## Building my own toolkit
 I saw that a library to ease the processing of input data and automate entry submission could be useful.
@@ -31,7 +31,7 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments
 18|00:05:31|00:20:55|00:02:35|00:08:21|TODO...
 17|00:05:03|00:20:00|00:02:25|00:14:05|TODO...
 16|00:04:33|00:15:30|00:02:03|00:11:36|TODO...
-15|00:01:26|00:11:04|00:00:51|00:02:10|TODO...
+15|00:01:26|00:11:04|00:00:51|00:02:10|OK. That one was surprisingly easy :-)
 14|00:05:46|00:17:15|00:01:28|00:04:10|OK. With 1 billion cycles, the second part cannot be brute forced, but after a while a cycle appears that avoids computing all of it
 13|00:06:06|00:13:46|00:03:51|00:08:58|The specification for this one doesn't cover all the cases that can be encountered
 12|00:05:58|00:05:58|00:02:02|00:08:12|HALF WAY. I need to work on an optimized algorithm for the second part
