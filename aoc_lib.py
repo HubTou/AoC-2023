@@ -89,11 +89,8 @@ def get_line_from_hash(hash_value, line_length, hit_char, miss_char):
 
     return "".join(line_as_list)
 
-    #return str(bin(hash_value)).replace('0b', '').ljust(line_length, '0').replace('0', miss_char).replace('1', hit_char)
-
 def get_table_from_hash(hash_value, line_length, hit_char, miss_char):
     """
     get_table_from_hash(331, 5, '#', '.') will return ['##.#.', '.#.#.']
     """
     return textwrap.wrap(get_line_from_hash(hash_value, line_length, hit_char, miss_char), line_length)
-
