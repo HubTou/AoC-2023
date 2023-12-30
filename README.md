@@ -1,7 +1,7 @@
 # [Advent of Code 2023](https://adventofcode.com/2023)
 This is a repository of personal notes and solutions to this coding tournament / challenge.
 
-For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 17 soon).
+For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 19 soon).
 
 ## Building my own toolkit
 I saw that a library to ease the processing of input data and automate entry submission could be useful.
@@ -28,8 +28,8 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments
 21|00:14:35|01:19:03|00:01:24|00:04:44|TODO...
 20|00:15:52|00:48:46|00:10:26|00:23:11|TODO...
 19|00:12:56|00:29:12|00:02:01|00:10:23|TODO...
-18|00:05:31|00:20:55|00:02:35|00:08:21|TODO...
-17|00:05:03|00:20:00|00:02:25|00:14:05|TODO...
+18|00:05:31|00:20:55|00:02:35|00:08:21|HALF WAY. The first part was quite fun and I found a flood filling algorithm that will also be useful for day 10 part 2
+17|00:05:03|00:20:00|00:02:25|00:14:05|TODO. Skipping that one until I can review [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm). Then I'll need to adapt it
 16|00:04:33|00:15:30|00:02:03|00:11:36|OK. That one was also easy, though I needed to take care of never ending beams in first part that blown up the Python recursion limit!
 15|00:01:26|00:11:04|00:00:51|00:02:10|OK. That one was surprisingly easy :-)
 14|00:05:46|00:17:15|00:01:28|00:04:10|OK. With 1 billion cycles, the second part cannot be brute forced, but after a while a cycle appears that avoids computing all of it
