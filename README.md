@@ -1,13 +1,15 @@
 # [Advent of Code 2023](https://adventofcode.com/2023)
 This is a repository of personal notes and solutions to this coding tournament / challenge.
 
-For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 19 soon).
+For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 19 soon, then I'll go back to the ones I left behind).
 
 ## Building my own toolkit
 I saw that a library to ease the processing of input data and automate entry submission could be useful.
 For example, the first player in the leaderboard used one for Kotlin.
 
 So I started my own in the [aoc_lib.py](https://github.com/HubTou/AoC-2023/blob/main/aoc_lib.py) file, with a blank template to use it in the [TEMPLATE.py](https://github.com/HubTou/AoC-2023/blob/main/TEMPLATE.py) file.
+
+I'll publish my solutions for days 1 - 13 once they're retrofitted to this new toolkit and template...
 
 ## Why not publishing puzzle texts and user inputs?
 As mentioned on [Advent of Code website](https://adventofcode.com/2023/about): 
