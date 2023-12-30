@@ -83,7 +83,7 @@ def get_line_from_hash(hash_value, line_length, hit_char, miss_char):
     """
     get_line_from_hash(11, 5, '#', '.') will return '##.#.'
     """
-    line = str(bin(hash_value)).replace('0b', '').rjust(line_length, '0').replace('0', miss_char).replace('1', hit_char)
+    line = f'{hash_value:0{line_length}b}'.replace('0', miss_char).replace('1', hit_char)
     line_as_list = list(line)
     line_as_list.reverse()
 
@@ -94,3 +94,30 @@ def get_table_from_hash(hash_value, line_length, hit_char, miss_char):
     get_table_from_hash(331, 5, '#', '.') will return ['##.#.', '.#.#.']
     """
     return textwrap.wrap(get_line_from_hash(hash_value, line_length, hit_char, miss_char), line_length)
+
+####################################################################################################
+
+def flood_fill(text_map, y, x, from_char, to_char):
+    """
+    Starting at (x,y) position, will recursively change any adjacent character that matches from_char to to_char
+    Adapted from http://inventwithpython.com/blog/2011/08/11/recursion-explained-with-the-flood-fill-algorithm-and-zombies-and-cats/
+    You have to set sys.setrecursionlimit(n) with n > 1000 if you hit the recursion limit
+    """
+    height = len(text_map)
+    width = len(text_map[0])
+
+    if text_map[y][x] != from_char:
+        return text_map
+
+    text_map[y] = text_map[y][:x] + to_char + text_map[y][x+1:]
+
+    if x > 0:
+        text_map = flood_fill(text_map, y, x - 1,  from_char, to_char)
+    if x < width - 1:
+        text_map = flood_fill(text_map, y, x + 1,  from_char, to_char)
+    if y > 0:
+        text_map = flood_fill(text_map, y - 1, x, from_char, to_char)
+    if y < height - 1:
+        text_map = flood_fill(text_map, y + 1, x, from_char, to_char)
+
+    return text_map
