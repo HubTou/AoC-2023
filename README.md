@@ -1,7 +1,7 @@
 # [Advent of Code 2023](https://adventofcode.com/2023)
 This is a repository of personal notes and solutions to this coding tournament / challenge.
 
-For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 19 part 2 soon, then I'll go back to the ones I left behind).
+For a first participation, I was not at all in the competitive mindset, but aimed at being a "finisher" of the 50 puzzles (I'm still working on it, starting day 20 soon, then I'll go back to the ones I left behind).
 
 ## Building my own toolkit
 I saw that a library to ease the processing of input data and automate entry submission could be useful.
@@ -21,7 +21,7 @@ The competition is now over. The [top players](https://adventofcode.com/2023/lea
 
 Check the time it took them to get the first and both stars:
 
-day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments
+day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments and hints
 ---|---|---|---|---|---
 25|00:02:53|00:14:01|00:02:43|00:13:07|TODO...
 24|00:12:42|01:02:10|00:04:17|00:15:56|TODO...
@@ -29,7 +29,7 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments
 22|00:12:50|00:29:48|00:10:04|00:21:00|TODO...
 21|00:14:35|01:19:03|00:01:24|00:04:44|TODO...
 20|00:15:52|00:48:46|00:10:26|00:23:11|TODO...
-19|00:12:56|00:29:12|00:02:01|00:10:23|HALF WAY. The first part was an easy regular expressions case. Will attempt the second part later on
+19|00:12:56|00:29:12|00:02:01|00:10:23|OK. Very pleasant one. Using some regular expressions and recursivity. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/19-p2-probabilities.png) explaining how the probabilities are computed as an hint.
 18|00:05:31|00:20:55|00:02:35|00:08:21|HALF WAY. The first part was quite fun and I found a flood filling algorithm that will also be useful for day 10 part 2. However it appears I'll have to rewrite my code completely to tackle part 2!
 17|00:05:03|00:20:00|00:02:25|00:14:05|TODO. Skipping that one until I can review [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm). Then I'll need to adapt it
 16|00:04:33|00:15:30|00:02:03|00:11:36|OK. That one was also easy, though I needed to take care of never ending beams in first part that blown up the Python recursion limit!
@@ -38,7 +38,7 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments
 13|00:06:06|00:13:46|00:03:51|00:08:58|The specification for this one doesn't cover all the cases that can be encountered
 12|00:05:58|00:05:58|00:02:02|00:08:12|HALF WAY. I need to work on an optimized algorithm for the second part
 11|00:03:37|00:09:18|00:02:00|00:06:07|OK
-10|00:10:04|00:36:31|00:01:05|00:11:33|HALF WAY. I'm still struggling with the algorithm for the second part!
+10|00:10:04|00:36:31|00:01:05|00:11:33|HALF WAY. I finally found a working (and easy) algorithm for the second part... after 3 weeks! I really needed to experience algorithmic warmup :-) 
 9|00:01:48|00:05:36|00:01:16|00:04:02|OK
 8|00:04:24|00:10:16|00:00:38|00:03:30|HALF WAY. I need to work on an optimized algorithm for the second part
 7|00:08:45|00:16:00|00:04:52|00:09:57|HALF WAY. The second part works with the example data, but not the validation data. I need to cross check my results with the solution of someone else to find my mistake(s)
