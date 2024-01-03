@@ -9,7 +9,7 @@ For example, the first player in the leaderboard used one for Kotlin.
 
 So I started my own in the [aoc_lib.py](https://github.com/HubTou/AoC-2023/blob/main/aoc_lib.py) file, with a blank template to use it in the [TEMPLATE.py](https://github.com/HubTou/AoC-2023/blob/main/TEMPLATE.py) file.
 
-I'll publish my solutions for days 1 - 13 once they're retrofitted to this new toolkit and template...
+I'll publish my solutions for days 1 - 9, 11 - 13 once they're retrofitted to this new toolkit and template...
 
 ## Why not publishing puzzle texts and user inputs?
 As mentioned on [Advent of Code website](https://adventofcode.com/2023/about): 
@@ -30,7 +30,7 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments and hints
 21|00:14:35|01:19:03|00:01:24|00:04:44|TODO...
 20|00:15:52|00:48:46|00:10:26|00:23:11|TODO...
 19|00:12:56|00:29:12|00:02:01|00:10:23|OK. Very pleasant one. Using some regular expressions and recursivity. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/19-p2-probabilities.png) explaining how the probabilities are computed as an hint.
-18|00:05:31|00:20:55|00:02:35|00:08:21|HALF WAY. The first part was quite fun and I found a flood filling algorithm that will also be useful for day 10 part 2. However it appears I'll have to rewrite my code completely to tackle part 2!
+18|00:05:31|00:20:55|00:02:35|00:08:21|HALF WAY. The first part was quite fun and I found a flood filling algorithm that could also be useful in the future. However it appears I'll have to rewrite my code completely to tackle part 2!
 17|00:05:03|00:20:00|00:02:25|00:14:05|TODO. Skipping that one until I can review [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm). Then I'll need to adapt it
 16|00:04:33|00:15:30|00:02:03|00:11:36|OK. That one was also easy, though I needed to take care of never ending beams in first part that blown up the Python recursion limit!
 15|00:01:26|00:11:04|00:00:51|00:02:10|OK. That one was surprisingly easy :-)
@@ -38,14 +38,14 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments and hints
 13|00:06:06|00:13:46|00:03:51|00:08:58|The specification for this one doesn't cover all the cases that can be encountered
 12|00:05:58|00:05:58|00:02:02|00:08:12|HALF WAY. I need to work on an optimized algorithm for the second part
 11|00:03:37|00:09:18|00:02:00|00:06:07|OK
-10|00:10:04|00:36:31|00:01:05|00:11:33|HALF WAY. I finally found a working (and easy) algorithm for the second part... after 3 weeks! I really needed to experience algorithmic warmup :-) 
+10|00:10:04|00:36:31|00:01:05|00:11:33|OK. I was stuck for a long time (about 3 weeks!) on the second part until I realised that FJ or L7 count as a single wall. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/10-p2-example-data-3-results.txt) explaining why with better looking characters. I really needed to experience algorithmic warmup :-) 
 9|00:01:48|00:05:36|00:01:16|00:04:02|OK
 8|00:04:24|00:10:16|00:00:38|00:03:30|HALF WAY. I need to work on an optimized algorithm for the second part
 7|00:08:45|00:16:00|00:04:52|00:09:57|HALF WAY. The second part works with the example data, but not the validation data. I need to cross check my results with the solution of someone else to find my mistake(s)
 6|00:02:05|00:05:02|00:01:15|00:03:11|OK
 5|00:08:38|00:26:37|00:01:35|00:08:15|OK. I got the result for the second part but it took a day to compute, with multiprocessing on a multi-cores machine. There must be a better way to do it! 
 4|00:01:22|00:07:08|00:00:43|00:02:51|OK
-3|00:05:09|00:11:37|00:03:11|00:07:09|OK
+3|00:05:09|00:11:37|00:03:11|00:07:09|OK)     
 2|00:01:34|00:06:15|00:00:37|00:04:10|OK
 1|00:02:24|00:07:03|00:00:12|00:01:39|OK. 12 seconds to read the spec, code and submit the result for the first star: how can this even be possible?!
 
