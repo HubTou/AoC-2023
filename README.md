@@ -45,9 +45,9 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments and hints
 6|00:02:05|00:05:02|00:01:15|00:03:11|OK
 5|00:08:38|00:26:37|00:01:35|00:08:15|OK. I got the result for the second part but it took a day to compute, with multiprocessing on a multi-cores machine. There must be a better way to do it! 
 4|00:01:22|00:07:08|00:00:43|00:02:51|OK
-3|00:05:09|00:11:37|00:03:11|00:07:09|OK)     
+3|00:05:09|00:11:37|00:03:11|00:07:09|OK
 2|00:01:34|00:06:15|00:00:37|00:04:10|OK
-1|00:02:24|00:07:03|00:00:12|00:01:39|OK. 12 seconds to read the spec, code and submit the result for the first star: how can this even be possible?!
+1|00:02:24|00:07:03|00:00:12|00:01:39|OK. Looking at the best competitor: 12 seconds to read the spec, code and submit the result for the first star, how can this even be possible?!
 
 ## Interesting notes and solutions elsewhere
 Half of the top 100 leaders have a GitHub account, and one third of them have published their AoC 2023 code.
