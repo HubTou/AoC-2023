@@ -7,7 +7,7 @@ For a first participation, I was not at all in the competitive mindset, but aime
 I saw that a library to ease the processing of input data and automate entry submission could be useful.
 For example, the first player in the leaderboard used one for Kotlin.
 
-So I started my own in the [aoc_lib.py](https://github.com/HubTou/AoC-2023/blob/main/aoc_lib.py) file, with a blank template to use it in the [TEMPLATE.py](https://github.com/HubTou/AoC-2023/blob/main/TEMPLATE.py) file.
+So I started my own in the [aoc_lib.py](https://github.com/HubTou/AoC-2023/blob/main/src/aoc_lib.py) file, with a blank template to use it in the [TEMPLATE.py](https://github.com/HubTou/AoC-2023/blob/main/src/TEMPLATE.py) file.
 
 I'll publish my solutions for days 1 - 9, 11 - 13 once they're retrofitted to this new toolkit and template...
 
@@ -29,7 +29,7 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments and hints
 22|00:12:50|00:29:48|00:10:04|00:21:00|TODO...
 21|00:14:35|01:19:03|00:01:24|00:04:44|TODO...
 20|00:15:52|00:48:46|00:10:26|00:23:11|TODO...
-19|00:12:56|00:29:12|00:02:01|00:10:23|OK. Very pleasant one. Using some regular expressions and recursivity. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/19-p2-probabilities.png) explaining how the probabilities are computed as an hint.
+19|00:12:56|00:29:12|00:02:01|00:10:23|OK. Very pleasant one. Using some regular expressions and recursivity. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/src/19-p2-probabilities.png) explaining how the probabilities are computed as an hint.
 18|00:05:31|00:20:55|00:02:35|00:08:21|HALF WAY. The first part was quite fun and I found a flood filling algorithm that could also be useful in the future. However it appears I'll have to rewrite my code completely to tackle part 2!
 17|00:05:03|00:20:00|00:02:25|00:14:05|TODO. Skipping that one until I can review [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm). Then I'll need to adapt it
 16|00:04:33|00:15:30|00:02:03|00:11:36|OK. That one was also easy, though I needed to take care of never ending beams in first part that blown up the Python recursion limit!
@@ -38,7 +38,7 @@ day|\*\*/1st|\*\*/100th|\*/1st|\*/100th|Comments and hints
 13|00:06:06|00:13:46|00:03:51|00:08:58|The specification for this one doesn't cover all the cases that can be encountered
 12|00:05:58|00:05:58|00:02:02|00:08:12|HALF WAY. I need to work on an optimized algorithm for the second part
 11|00:03:37|00:09:18|00:02:00|00:06:07|OK
-10|00:10:04|00:36:31|00:01:05|00:11:33|OK. I was stuck for a long time (about 3 weeks!) on the second part until I realised that FJ or L7 count as a single wall. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/10-p2-example-data-3-results.txt) explaining why with better looking characters. I really needed to experience algorithmic warmup :-) 
+10|00:10:04|00:36:31|00:01:05|00:11:33|OK. I was stuck for a long time (about 3 weeks!) on the second part until I realised that FJ or L7 count as a single wall. I provided a [file](https://github.com/HubTou/AoC-2023/blob/main/src/10-p2-example-data-3-results.txt) explaining why with better looking characters. I really needed to experience algorithmic warmup :-) 
 9|00:01:48|00:05:36|00:01:16|00:04:02|OK
 8|00:04:24|00:10:16|00:00:38|00:03:30|HALF WAY. I need to work on an optimized algorithm for the second part
 7|00:08:45|00:16:00|00:04:52|00:09:57|HALF WAY. The second part works with the example data, but not the validation data. I need to cross check my results with the solution of someone else to find my mistake(s)
