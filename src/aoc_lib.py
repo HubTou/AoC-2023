@@ -99,25 +99,48 @@ def get_table_from_hash(hash_value, line_length, hit_char, miss_char):
 
 def flood_fill(text_map, y, x, from_char, to_char):
     """
-    Starting at (x,y) position, will recursively change any adjacent character that matches from_char to to_char
-    Adapted from http://inventwithpython.com/blog/2011/08/11/recursion-explained-with-the-flood-fill-algorithm-and-zombies-and-cats/
+    Starting at (x,y) position, will recursively change any adjacent character that matches from
+    char to to_char. Adapted from
+    http://inventwithpython.com/blog/2011/08/11/recursion-explained-with-the-flood-fill-algorithm-and-zombies-and-cats/
     You have to set sys.setrecursionlimit(n) with n > 1000 if you hit the recursion limit
     """
     height = len(text_map)
     width = len(text_map[0])
 
-    if text_map[y][x] != from_char:
-        return text_map
+    if text_map[y][x] == from_char:
+        text_map[y] = text_map[y][:x] + to_char + text_map[y][x+1:]
 
-    text_map[y] = text_map[y][:x] + to_char + text_map[y][x+1:]
+        if x > 0:
+            text_map = flood_fill(text_map, y, x - 1,  from_char, to_char)
+        if x < width - 1:
+            text_map = flood_fill(text_map, y, x + 1,  from_char, to_char)
+        if y > 0:
+            text_map = flood_fill(text_map, y - 1, x, from_char, to_char)
+        if y < height - 1:
+            text_map = flood_fill(text_map, y + 1, x, from_char, to_char)
 
-    if x > 0:
-        text_map = flood_fill(text_map, y, x - 1,  from_char, to_char)
-    if x < width - 1:
-        text_map = flood_fill(text_map, y, x + 1,  from_char, to_char)
-    if y > 0:
-        text_map = flood_fill(text_map, y - 1, x, from_char, to_char)
-    if y < height - 1:
-        text_map = flood_fill(text_map, y + 1, x, from_char, to_char)
+    return text_map
+
+####################################################################################################
+
+def find_starting_position(text_map, start_char):
+    """
+    Returns the y,x coordinate of the first start_char to appear in a text map
+    or -1,-1 if not found
+    """
+    y = x = -1
+    for y, line in enumerate(text_map):
+        x = line.find(start_char)
+        if x != -1:
+            break
+
+    return y, x
+
+def replace_character(text_map, y, x, new_char):
+    """
+    Returns a text map where the character at a specified position has been modified with the one
+    provided
+    """
+    text_map[y] = text_map[y][:x] + new_char[0] + text_map[y][x + 1:]
 
     return text_map
